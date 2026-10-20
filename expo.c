@@ -38,6 +38,6 @@ int main(int argc, char *argv[]) {
         return 2;
     }
 
-    printf("%g ^ %g = %g\n", base, exponent, base * exponent);
+    printf("%g ^ %g = %g\n", base, exponent, pow(base, exponent));
     return 0;
 }
