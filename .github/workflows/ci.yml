@@ -155,15 +155,8 @@ jobs:
           context: .
           # Upload the image instead of keeping it on the VM
           push: true
-          # Three tags for the same image:
-          #   :1.0       the fixed version
-          #   :latest    always points to the newest build
-          #   :<sha>     the exact commit, so you can trace any image back to its code
-          # tags: |
-          #   ghcr.io/${{ github.repository_owner }}/expo:1.0
-          #   ghcr.io/${{ github.repository_owner }}/expo:latest
-          #   ghcr.io/${{ github.repository_owner }}/expo:${{ github.sha }}
+          # Dynamically uses YOUR GitHub account name instead of a hardcoded one
           tags: |
-            ghcr.io/habits-lab-mmacedo/expo:1.0
-            ghcr.io/habits-lab-mmacedo/expo:latest
-            ghcr.io/habits-lab-mmacedo/expo:${{ github.sha }}
+            ghcr.io/${{ github.repository_owner }}/expo:1.0
+            ghcr.io/${{ github.repository_owner }}/expo:latest
+            ghcr.io/${{ github.repository_owner }}/expo:${{ github.sha }}
