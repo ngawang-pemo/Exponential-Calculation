@@ -30,6 +30,7 @@ check "2 10"   "2 ^ 10 = 1024"
 check "5 0"    "5 ^ 0 = 1"
 check "2 -1"   "2 ^ -1 = 0.5"
 check "9 0.5"  "9 ^ 0.5 = 3"
+check "10 2" "10 ^ 2 = 100"
 check_fails "abc 2"
 check_fails "-8 0.5"
 
