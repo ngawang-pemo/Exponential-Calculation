@@ -18,3 +18,5 @@ USER 65534:65534
 # When the container starts, run /expo. 
 # Any arguments you pass to docker run like 2 10 are handed to it.
 ENTRYPOINT ["/expo"]
+
+#allows us to talk to the code
