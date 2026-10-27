@@ -19,6 +19,7 @@ check() {
 
 check "home page loads"       "/"                               "Exponent Calculator"
 check "2 ^ 10"                "/calculate?base=2&exponent=10"   "2 ^ 10 = 1024"
+check "4 ^ 2"                "/calculate?base=2&exponent=10"   "4 ^ 2 = 16"
 check "5 ^ 0"                 "/calculate?base=5&exponent=0"    "5 ^ 0 = 1"
 check "square root of 9"      "/calculate?base=9&exponent=0.5"  "9 ^ 0.5 = 3"
 check "abc is rejected"       "/calculate?base=abc&exponent=2"  "\"ok\": false"
